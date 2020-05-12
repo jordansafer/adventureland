@@ -25,6 +25,11 @@ globals:
   last_potion: writable
   start_character: readonly
   load_code: readonly
+  smart: writable
+  rejecting_promise: readonly
+  resolve_deferreds: readonly
+  push_deferred: readonly
+  reject_deferreds: readonly
 parserOptions:
   ecmaVersion: 11
   sourceType: module
