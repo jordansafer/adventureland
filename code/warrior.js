@@ -12,6 +12,9 @@ setInterval(function() {
     const target = get_targeted_monster()
     if (!target || target.rip) {
         smarter_move()
+        if (in_range_to(character, {x:0, y:0}, 500)) {
+            move(character.x, character.y + 100)
+        }
     }
 }, 2 * second)
 

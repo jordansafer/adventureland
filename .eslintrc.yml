@@ -30,6 +30,7 @@ globals:
   resolve_deferreds: readonly
   push_deferred: readonly
   reject_deferreds: readonly
+  move: readonly
 parserOptions:
   ecmaVersion: 11
   sourceType: module
