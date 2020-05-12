@@ -20,7 +20,7 @@ jobs:
         npm ci
     - name: eslint checks
       run: |
-        npm test
+        npm run lint
     - name: Get API Keys
       uses: nowactions/envsubst@v1
       with:

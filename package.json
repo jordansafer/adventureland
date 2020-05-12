@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "eslint --fix code"
+    "lint": "eslint --fix code",
+    "test": "mocha",
+    "coverage": "nyc mocha"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +15,8 @@
     "node-fetch": "^2.6.0"
   },
   "devDependencies": {
-    "eslint": "^7.0.0"
+    "eslint": "^7.0.0",
+    "mocha": "^7.1.2",
+    "nyc": "^15.0.1"
   }
 }
