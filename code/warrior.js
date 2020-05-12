@@ -55,7 +55,6 @@ setInterval(function(){
 },second/4) // Loops every 1/4 seconds.
 
 //Source code of: use_hp_or_mp
-let last_potion = new Date()
 function use_hp_or_mp()
 {
     use_hp_or_mp_regen()
@@ -100,7 +99,7 @@ function get_nearest_monster(args)
     if(args && args.mtype) game_log("get_nearest_monster: you used 'mtype', you should use 'type'")
 
     const sprites = Object.values(parent.entities)
-    const sortedSprites = sprites.sortBy(sp => sp.xp).reverse()
+    const sortedSprites = sprites.sort((a,b) => a.xp > b.xp).reverse()
 
     for (const current of sortedSprites) {
         if(current.type != "monster" || !current.visible || current.dead) continue

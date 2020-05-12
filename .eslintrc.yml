@@ -22,6 +22,9 @@ globals:
   set_message: readonly
   respawn: readonly
   get_targeted_monster: readonly
+  last_potion: writable
+  start_character: readonly
+  load_code: readonly
 parserOptions:
   ecmaVersion: 11
   sourceType: module

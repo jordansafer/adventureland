@@ -6,6 +6,7 @@ const upload = require("./tools/upload.js");
  * Change this for files to save 
  */
 const save_map = {
+    "code/main.js": {slot: 1, name: "main"},
     "code/warrior.js": {slot: 2, name: "warrior"}
 };
 
