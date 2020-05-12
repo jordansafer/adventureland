@@ -1,1 +1,1 @@
-game_log("this works too");
+game_log("this works too")

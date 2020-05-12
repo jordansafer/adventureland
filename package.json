@@ -1,15 +1,18 @@
 {
-  "name": "al-code-upload",
+  "name": "adventureland",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "eslint code"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.0.0"
   }
 }
