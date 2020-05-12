@@ -1,7 +1,10 @@
 
-start_character("food", "warrior")
+const characters = get_characters().map(chr => chr.name)
 
-start_character("fiveHundred", "warrior")
+for (const name of characters) {
+    start_character(name, "warrior")
+}
+load_code("warrior")
 
-// filey can be a warrior too
+// main can be a warrior too
 load_code("warrior")

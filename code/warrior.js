@@ -67,6 +67,7 @@ function use_hp_or_mp()
     if(used_potion) last_potion=new Date()
 }
 
+// TODO this gets run multiple times for multiple chars. use memory to be smarter
 let last_regen = new Date()
 function use_hp_or_mp_regen()
 {
