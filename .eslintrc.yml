@@ -6,6 +6,22 @@ globals:
   Atomics: readonly
   SharedArrayBuffer: readonly
   game_log: readonly
+  character: readonly
+  use: readonly
+  can_move_to: readonly
+  mssince: readonly
+  safeties: readonly
+  is_on_cooldown: readonly
+  attack: readonly
+  can_attack: readonly
+  smart_move: readonly
+  is_moving: readonly
+  loot: readonly
+  change_target: readonly
+  is_in_range: readonly
+  set_message: readonly
+  respawn: readonly
+  get_targeted_monster: readonly
 parserOptions:
   ecmaVersion: 11
   sourceType: module

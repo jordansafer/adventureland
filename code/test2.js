@@ -1,1 +1,0 @@
-game_log("this works too")
