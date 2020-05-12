@@ -1,13 +1,3 @@
-# al-code-upload
+# AdventureLand AI
 
-Tool to ease the upload process of code to Adventure Land
-
-## Getting Started
-
-Put your code files in the `code/` folder. To specify what files you want to upload and where you want to upload them, modify the file `index.js`.
-
-Before you can upload, you will need your auth token for Adventure Land. In the game, go to CONF, toggle pro mode, click "Open Game Inspector". Navigate to "Application" tab. Your auth token is the value of `auth`. Copy that into a file named `.secret`.
-
-To install required dependencies, run `npm install` from a console.
-
-To upload code, run `npm start`
+AI for AdventureLand. Runs code on characters with hardcoded names currently. Search and attack code only.
