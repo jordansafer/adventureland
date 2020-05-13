@@ -7,17 +7,6 @@ setInterval(function() {
     respawn()
 }, 20 * second)
 
-// change target if target is dead
-setInterval(function() {
-    const target = get_targeted_monster()
-    if (!target || target.rip) {
-        smarter_move()
-        if (in_range_to(character, {x:0, y:0}, 500)) {
-            move(character.x, character.y + 100)
-        }
-    }
-}, 2 * second)
-
 // find a target, attack it
 setInterval(function(){
     use_hp_or_mp()
@@ -33,6 +22,9 @@ setInterval(function(){
         if(target) change_target(target)
         else {
             set_message("No Monsters")
+            if (in_range_to(character, {x:0, y:0}, 500)) {
+                smarter_move({x:0, y:500, map: "main"})
+            }
             return
         }
     }
